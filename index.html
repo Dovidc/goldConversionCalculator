@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PRECIOUS METAL PRICE CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+        <h1>PRECIOUS METAL PRICE CALCULATOR</h1>
+        <div class="calculator">
+            <label for="metal">Select a Metal:</label>
+            <select id="metal">
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Platinum">Platinum</option>
+            </select>
+            <label for="weightCategory">Weight Category:</label>
+            <select id="weightCategory">
+                <option value="Grams">Grams</option>
+                <option value="Ounces">Ounces</option>
+                <option value="Kilograms">Kilograms</option>
+            </select>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" placeholder="Enter weight amount">
+            <button id="calculate">Calculate</button>
+            <div id="result"></div>
+            <div
+                id="knoxResult"></div>
+            
+        </div>
+    </div>
+
+    <script src="stuff.js"></script>
+</body>
+</html>

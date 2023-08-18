@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://media.tenor.com/aWcyWL5BsY0AAAAC/money-printer-go-brr-jerome-powell.gif"); /* Replace with the actual path to your image */
+  background-size: cover; /* Adjust this property to control how the image covers the background */
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffffc5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+.calculator {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(206, 187, 14);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select, input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(219, 193, 45);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #000000;
+  
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.01s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 19px;
+}
