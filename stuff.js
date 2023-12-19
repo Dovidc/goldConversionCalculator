@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function formatNumberWithCommas(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
-
+// anything
 var pricePerGold = 0; 
 var pricePerSilver = 0;
 var pricePerPlatinum = 0;
