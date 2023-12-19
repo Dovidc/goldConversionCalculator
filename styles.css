@@ -6,8 +6,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("https://media.tenor.com/aWcyWL5BsY0AAAAC/money-printer-go-brr-jerome-powell.gif"); /* Replace with the actual path to your image */
-  background-size: cover; /* Adjust this property to control how the image covers the background */
+  background-image: url("https://media.tenor.com/aWcyWL5BsY0AAAAC/money-printer-go-brr-jerome-powell.gif"); 
+  background-size: cover; 
   background-repeat: no-repeat;
 }
 

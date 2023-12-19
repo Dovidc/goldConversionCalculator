@@ -15,8 +15,8 @@ fetch("https://api.metalpriceapi.com/v1/latest?api_key=d3f9faa7064b3a9ead69359de
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        pricePerGold = 0.00053583//data.rates.XAU;
-        pricePerSilver = 0.032942842 //data.rates.XAG;
+        pricePerGold = data.rates.XAU; //0.00053583
+        pricePerSilver =  data.rates.XAG; //0.032942842
         pricePerPlatinum = data.rates.XPT;
     })
     .catch(error => console.log('error', error));
@@ -74,11 +74,15 @@ function calculatePrice() {
 
             const totalPrice = pricePerUnit * weight;
             const knoxResult = (totalPrice / 480840000000) * 100;
+            const elonResult = (totalPrice / 244000000000) * 100;
 
             const resultElement = document.getElementById('result');
             resultElement.textContent = `Total Price: $${formatNumberWithCommas(totalPrice.toFixed(2))}`;
 
             const knoxResultElement = document.getElementById('knoxResult');
-            knoxResultElement.textContent =  `Compared to US federal gold reserves: ${knoxResult.toFixed(8)}%`;
+            knoxResultElement.textContent =  `Compared to US federal gold reserves: ${knoxResult.toFixed(6)}%`;
+
+            const elonResultElement = document.getElementById('elonResult');
+            elonResultElement.textContent =  `Compared to Elon Musk net worth     : ${elonResult.toFixed(6)}%`;
 }
 
