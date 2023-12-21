@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function formatNumberWithCommas(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
 // anything
 var pricePerGold = 0; 
 var pricePerSilver = 0;
@@ -75,6 +76,7 @@ function calculatePrice() {
             const totalPrice = pricePerUnit * weight;
             const knoxResult = (totalPrice / 480840000000) * 100;
             const elonResult = (totalPrice / 244000000000) * 100;
+            const CAresult = (totalPrice /  3006000000000) * 100;
 
             const resultElement = document.getElementById('result');
             resultElement.textContent = `Total Price: $${formatNumberWithCommas(totalPrice.toFixed(2))}`;
@@ -84,5 +86,8 @@ function calculatePrice() {
 
             const elonResultElement = document.getElementById('elonResult');
             elonResultElement.textContent =  `Compared to Elon Musk net worth     : ${elonResult.toFixed(6)}%`;
+
+            const CAresultElement = document.getElementById('CAresult');
+            CAresultElement.textContent =  `Compared to CA GDP: (2022)     : ${CAresult.toFixed(6)}%`;
 }
 
