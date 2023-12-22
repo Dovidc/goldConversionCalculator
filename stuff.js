@@ -75,8 +75,8 @@ function calculatePrice() {
 
             const totalPrice = pricePerUnit * weight;
             const knoxResult = (totalPrice / 480840000000) * 100;
-            const elonResult = (totalPrice / 244000000000) * 100;
-            const CAresult = (totalPrice /  3006000000000) * 100;
+            const elonResult = (totalPrice / 257000000000) * 100;
+            const CAresult = (totalPrice /220000000000000) * 100;
 
             const resultElement = document.getElementById('result');
             resultElement.textContent = `Total Price: $${formatNumberWithCommas(totalPrice.toFixed(2))}`;
@@ -85,9 +85,9 @@ function calculatePrice() {
             knoxResultElement.textContent =  `Compared to US federal gold reserves: ${knoxResult.toFixed(6)}%`;
 
             const elonResultElement = document.getElementById('elonResult');
-            elonResultElement.textContent =  `Compared to Elon Musk net worth     : ${elonResult.toFixed(6)}%`;
+            elonResultElement.textContent =  `Compared to Elon Musk net worth (2023)     : ${elonResult.toFixed(6)}%`;
 
             const CAresultElement = document.getElementById('CAresult');
-            CAresultElement.textContent =  `Compared to CA GDP: (2022)     : ${CAresult.toFixed(6)}%`;
+            CAresultElement.textContent =  `Compared to US GDP: (2021)     : ${CAresult.toFixed(6)}%`;
 }
 
