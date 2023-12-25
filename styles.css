@@ -46,7 +46,7 @@ select, input {
 }
 
 button {
-  background-color: #000000;
+  background-color: #3bb416;
   
   color: #ffffff;
   padding: 12px 24px;
@@ -59,8 +59,8 @@ button {
 }
 
 button:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #00f028;
+  color: #ffffff;
   width: 100%;
 }
 
