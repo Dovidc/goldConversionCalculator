@@ -79,7 +79,7 @@ function calculatePrice() {
             const CAresult = (totalPrice /220000000000000) * 100;
 
             const resultElement = document.getElementById('result');
-            resultElement.textContent = `Total Price: $${formatNumberWithCommas(totalPrice.toFixed(2))}`;
+            resultElement.textContent = `Total Price: $ ${formatNumberWithCommas(totalPrice.toFixed(2))}`;
             
             const knoxResultElement = document.getElementById('knoxResult');
             knoxResultElement.textContent = `US federal gold reserves: ${knoxResult.toFixed(6)}%`;
