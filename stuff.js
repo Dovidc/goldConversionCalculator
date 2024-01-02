@@ -82,13 +82,13 @@ function calculatePrice() {
             resultElement.textContent = `Total Price: $ ${formatNumberWithCommas(totalPrice.toFixed(2))}`;
             
             const knoxResultElement = document.getElementById('knoxResult');
-            knoxResultElement.textContent = `US federal gold reserves: ${knoxResult.toFixed(6)}%`;
+            knoxResultElement.textContent = `US federal gold reserves: ${knoxResult.toFixed(9)}%`;
             
             const elonResultElement = document.getElementById('elonResult');
-            elonResultElement.textContent = `Elon Musk net worth (2023): ${elonResult.toFixed(6)}%`;
+            elonResultElement.textContent = `Elon Musk net worth (2023): ${elonResult.toFixed(9)}%`;
             
             const CAresultElement = document.getElementById('CAresult');
-            CAresultElement.textContent = `  US GDP (2021): ${CAresult.toFixed(6)}%`;
+            CAresultElement.textContent = `  US GDP (2021): ${CAresult.toFixed(9)}%`;
             
 }
 
