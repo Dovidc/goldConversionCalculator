@@ -82,7 +82,7 @@ function calculatePrice() {
             resultElement.textContent = `Total Price: $ ${formatNumberWithCommas(totalPrice.toFixed(2))}`;
             
             const knoxResultElement = document.getElementById('knoxResult');
-            knoxResultElement.textContent = `US federal gold reserves: ${knoxResult.toFixed(9)}%`;
+            knoxResultElement.textContent = `US federal gold reserves: ${knoxResult.toFixed(6)}%`;
             
             const elonResultElement = document.getElementById('elonResult');
             elonResultElement.textContent = `Elon Musk net worth (2023): ${elonResult.toFixed(9)}%`;
