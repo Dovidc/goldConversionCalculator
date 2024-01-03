@@ -88,7 +88,7 @@ function calculatePrice() {
             elonResultElement.textContent = `Elon Musk net worth (2023): ${elonResult.toFixed(9)}%`;
             
             const CAresultElement = document.getElementById('CAresult');
-            CAresultElement.textContent = `  US GDP (2021): ${CAresult.toFixed(9)}%`;
+            CAresultElement.textContent = `  US GDP (2021): ${CAresult.toFixed(8)}%`;
             
 }
 
