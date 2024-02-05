@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const elonResultElement = document.getElementById('elonResult');
         elonResultElement.textContent = `Elon Musk net worth (2023): ${elonResult.toFixed(9)}%`;
 
-        const USdebtElement = document.getElementById('USdebt');
-        USdebtElement.textContent = `US Debt (live): ${USdebtResult.toFixed(8)}%`;
+        // const USdebtElement = document.getElementById('USdebt');
+        // USdebtElement.textContent = `US Debt (live): ${USdebtResult.toFixed(8)}%`;
 
         const CAresultElement = document.getElementById('CAresult');
         CAresultElement.textContent = `US GDP (2021): ${CAresult.toFixed(8)}%`;
